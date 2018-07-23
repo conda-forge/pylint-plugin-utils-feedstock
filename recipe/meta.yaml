@@ -1,6 +1,6 @@
 {% set name = "pylint-plugin-utils" %}
-{% set version = "0.2.6" %}
-{% set sha256 = "053ade7c76f83242225b49d47624d9ecb803c60347e2c5127e97a19bf0c9f95e" %}
+{% set version = "0.4" %}
+{% set sha256 = "8ad25a82bcce390d1d6b7c006c123e0cb18051839c9df7b8bdb7823c53fe676e" %}
 
 package:
   name: {{ name|lower }}
@@ -12,14 +12,14 @@ source:
   sha256: {{ sha256 }}
 
 build:
+  noarch: python
   number: 0
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
     - python
-    - setuptools
-
+    - pip
   run:
     - python
     - pylint
