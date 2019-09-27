@@ -1,6 +1,6 @@
 {% set name = "pylint-plugin-utils" %}
-{% set version = "0.5" %}
-{% set sha256 = "8d9e31d5ea8b7b0003e1f0f136b44a5235896a32e47c5bc2ef1143e9f6ba0b74" %}
+{% set version = "0.6" %}
+{% set sha256 = "57625dcca20140f43731311cd8fd879318bf45a8b0fd17020717a8781714a25a" %}
 
 package:
   name: {{ name|lower }}
@@ -14,7 +14,7 @@ source:
 build:
   noarch: python
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
