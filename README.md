@@ -1,7 +1,3 @@
-<!--
-# -*- mode: jinja -*-
--->
-
 About pylint-plugin-utils
 =========================
 
@@ -18,8 +14,15 @@ Summary: Utilities and helpers for writing Pylint plugins
 Current build status
 ====================
 
-All platforms:
-[![noarch](https://img.shields.io/circleci/project/github/conda-forge/pylint-plugin-utils-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/pylint-plugin-utils-feedstock)
+
+<table><tr><td>All platforms:</td>
+    <td>
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5696&branchName=master">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pylint-plugin-utils-feedstock?branchName=master">
+      </a>
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================
