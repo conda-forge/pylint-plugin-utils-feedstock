@@ -33,7 +33,7 @@ test:
 about:
   home: https://github.com/landscapeio/pylint-plugin-utils
   summary: Utilities and helpers for writing Pylint plugins
-  license: GPL-2.0
+  license: GPL-2.0-only
   license_file: LICENSE
 
 extra:
