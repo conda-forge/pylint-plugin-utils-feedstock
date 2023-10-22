@@ -1,26 +1,27 @@
 {% set name = "pylint-plugin-utils" %}
-{% set version = "0.7" %}
+{% set version = "0.8.2" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pylint-plugin-utils-{{ version }}.tar.gz
-  sha256: ce48bc0516ae9415dd5c752c940dfe601b18fe0f48aa249f2386adfa95a004dd
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pylint_plugin_utils-{{ version }}.tar.gz
+  sha256: d3cebf68a38ba3fba23a873809155562571386d4c1b03e5b4c4cc26c3eee93e4
 
 build:
-  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
+  number: 0
 
 requirements:
   host:
+    - python >=3.7,<4.0
+    - poetry-core >=1.0.0
     - pip
-    - python >=3.5
   run:
+    - python >=3.7,<4.0
     - pylint >=1.7
-    - python >=3.5
 
 test:
   imports:
