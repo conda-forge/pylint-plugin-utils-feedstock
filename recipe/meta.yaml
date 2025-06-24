@@ -1,5 +1,5 @@
 {% set name = "pylint-plugin-utils" %}
-{% set version = "0.8.2" %}
+{% set version = "0.9.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pylint_plugin_utils-{{ version }}.tar.gz
-  sha256: d3cebf68a38ba3fba23a873809155562571386d4c1b03e5b4c4cc26c3eee93e4
+  sha256: 5468d763878a18d5cc4db46eaffdda14313b043c962a263a7d78151b90132055
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
